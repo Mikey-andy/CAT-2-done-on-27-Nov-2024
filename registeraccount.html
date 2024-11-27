@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ padding: 20px;
+}
+
+.container {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+label {
+ display: block;
+ margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ box-sizing: border-box;
+}
+
+button {
+ background-color: #4CAF50;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 3px;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: #45a049;
+}
+
+.error {
+ color: red;
+ font-size: 14px;
+ margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+ <h1>Register Account</h1>
+
+ <form>
+   <label for="fullname">Full Name:</label>
+   <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+   <div class="error">User  name must be at least 4 characters</div>
+
+   <label for="password">Password:</label>
+   <input type="password" id="password" name="password" placeholder="Enter your password">
+   <div class="error">Password must be at least 8 characters long</div>
+
+   <label for="confirm-password">Confirm Password:</label>
+   <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+   <div class="error">Passwords do not match</div>
+
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" placeholder="Enter your email address">
+   <div class="error">Invalid email format</div>
+
+   <label for="phone">Phone Number:</label>
+   <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+   <div class="error">Invalid phone number</div>
+
+   <label for="zip">Zip Code:</label>
+   <input type="text" id="zip" name="zip" placeholder="Enter your zip code">
+   <div class="error">Invalid Zip Code</div>
+
+   <label for="card-type">Card Type:</label>
+   <select id="card-type" name="card-type">
+     <option value="visa">Visa</option>
+     <option value="mastercard">MasterCard</option>
+     <option value="amex">American Express</option>
+   </select>
+
+   <label for="card-number">Card Number:</label>
+   <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+   <div class="error">Invalid card number format</div>
+
+   <label for="expiration-date">Expiration Date:</label>
+   <input type="date" id="expiration-date" name="expiration-date">
+   <div class="error">Invalid expiration date</div>
+
+   <button type="submit">Register</button>
+   <button type="Reset">Reset</button>
+ </form>
+</div>
+
+</body>
+</html>
